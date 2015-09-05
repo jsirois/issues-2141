@@ -1,0 +1,10 @@
+java_library(
+  name='lib',
+  sources=rglobs('*.java'),
+  resources=[
+    'src/main/resources:lib_resources',
+  ],
+  dependencies=[
+    '//:guava',
+  ]
+)

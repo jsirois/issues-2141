@@ -1,0 +1,12 @@
+junit_tests(
+  name='lib_tests',
+  sources=rglobs('*.java'),
+  resources=[
+    'src/test/resources:test_resources',
+  ],
+  dependencies=[
+    '//:guava',
+    '//:junit',
+    'src/main/java:lib',
+  ]
+)
